@@ -1,0 +1,154 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #2c2c2c;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* Search Bar */
+#movieQuery {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Movie Search Results */
+#results div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s;
+}
+
+#results div:hover {
+    transform: scale(1.02);
+}
+
+#results img {
+    width: 60px;
+    border-radius: 8px;
+}
+
+/* Favorite Movies List */
+#favoriteMoviesList {
+    list-style: none;
+    padding: 0;
+}
+
+#favoriteMoviesList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #444;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s;
+}
+
+#favoriteMoviesList li:hover {
+    transform: scale(1.02);
+}
+
+#favoriteMoviesList a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#favoriteMoviesList a:hover {
+    color: #ff1a1a;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    #movieQuery {
+        width: 100%;
+    }
+    
+    button {
+        width: 100%;
+        padding: 14px;
+    }
+    
+    #results div {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #results img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    #favoriteMoviesList li {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logout-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
