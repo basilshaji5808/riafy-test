@@ -29,7 +29,7 @@ include 'db-conf.php';
             <?php
             if($isLogged) {
             ?>
-                <a class="logout-btn" href=<?php echo "actions/logout?id=" . $_SESSION['user_id']; ?>>Logout</a>
+                <a class="logout-btn" href=<?php echo "actions/logout.php?id=" . $_SESSION['user_id']; ?>>Logout</a>
             <?php
             }
             ?>
